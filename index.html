@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nonna's Trattoria</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Playfair+Display:ital,wght@1,700&display=swap">
+<link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+<header class="top">
+  <div class="bar"><button class="logo" id="home">Nonna's Trattoria</button>
+  <button class="cartbtn" id="open" aria-label="فتح السلة">🛒 السلة <span class="n" id="cnt">0</span></button></div>
+  <div class="hero" id="hero"><h1>بيتزا وباستا زي ما بتتعمل في إيطاليا</h1><p>عجينة مخمّرة ٤٨ ساعة، وصوصات متحضّرة طازة كل يوم.</p></div>
+</header>
+<div class="tabs" id="tabs"><button class="tab" data-c="pizza" aria-selected="true">🍕 بيتزا</button><button class="tab" data-c="pasta" aria-selected="false">🍝 باستا</button></div>
+<main id="main"></main>
+<div class="shade" id="shade"></div>
+<aside id="cart" aria-label="سلة الطلب" aria-hidden="true">
+  <div class="hd"><h2>طلبك</h2><button class="x" id="close" aria-label="إغلاق">×</button></div>
+  <div class="items" id="items"></div>
+  <div class="foot">
+    <div class="tot"><span>الإجمالي</span><span id="total">0</span></div>
+    <input id="nm" placeholder="الاسم" autocomplete="name">
+    <input id="ph" placeholder="رقم الموبايل" inputmode="tel" autocomplete="tel">
+    <textarea id="ad" rows="2" placeholder="العنوان (أو اكتب: استلام من المطعم)"></textarea>
+    <div class="err" id="err" role="alert"></div>
+    <button class="send" id="send" disabled>إرسال الطلب على واتساب</button>
+  </div>
+</aside>
+<script src="js/main.js"></script>
+</body>
+</html>
